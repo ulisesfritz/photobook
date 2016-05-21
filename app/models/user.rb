@@ -7,4 +7,6 @@ class User < ActiveRecord::Base
   def name
   firstname + ' ' + lastname
   end
+  # Establish the relationship between models.
+  has_many :posts
 end
